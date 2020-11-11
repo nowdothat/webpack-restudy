@@ -1,8 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const {
-	CleanWebpackPlugin
-} = require('clean-webpack-plugin');
-
 
 module.exports = {
 	// 入口文件，指向app.js
@@ -49,7 +45,6 @@ module.exports = {
     ]
   },
 	plugins: [
-		new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       template: './src/index.html',
